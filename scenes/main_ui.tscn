@@ -1,0 +1,115 @@
+[gd_scene load_steps=2 format=3 uid="uid://30525jb1k7cu"]
+
+[ext_resource type="Script" path="res://scenes/main_ui.gd" id="1_wwsrc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 0.347222
+anchor_bottom = 0.771605
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wwsrc")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 500.0
+
+[node name="Label_title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Clippy Path
+"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="bp_1" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 1"
+
+[node name="bp_2" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 2"
+
+[node name="bp_3" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 3
+"
+
+[node name="bp_4" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 4
+"
+
+[node name="bp_5" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 5"
+
+[node name="bp_6" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 6"
+
+[node name="bp_7" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 7
+"
+
+[node name="bp_8" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Path 8
+"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="bp_9" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 9
+"
+
+[node name="bp_10" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 10
+"
+
+[node name="bp_11" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 11
+"
+
+[node name="bp_12" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 12
+"
+
+[node name="bp_13" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 13"
+
+[node name="bp_14" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 14
+"
+
+[node name="bp_15" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 15"
+
+[node name="bp_16" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Path 16
+"
+
+[node name="Label_version" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "version dev-1.0"
+vertical_alignment = 1
+
+[connection signal="gui_input" from="VBoxContainer/HBoxContainer/VBoxContainer/bp_2" to="." method="_on_bp_1_gui_input"]
